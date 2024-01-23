@@ -33,10 +33,18 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    viewBinding {
+        enable = true
+    }
 }
 
 dependencies {
 
+    //implementação do OpenStreetMap
+    implementation("com.github.MKergall:osmbonuspack:6.9.0")
+
+    //padrão do projeto
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
